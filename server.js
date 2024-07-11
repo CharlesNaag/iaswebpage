@@ -1,4 +1,3 @@
-module.exports = pool;
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
@@ -135,5 +134,4 @@ app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
 
-module.exports = pool;
-
+module.exports = pool; // Export pool after it has been initialized
