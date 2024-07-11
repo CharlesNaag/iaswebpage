@@ -10,7 +10,7 @@ const pool = new Pool({
   host: process.env.PG_HOST || 'dpg-cq7k6i5ds78s73d8fccg-a',
   user: process.env.PG_USER || 'iaswebpage_user',
   password: process.env.PG_PASSWORD || 'JqaiElt5jmcURnjyNYxm5K6gUUdfj3dA',
-  database: process.env.PG_DATABASE || 'iaswebactivity',
+  database: process.env.PG_DATABASE || 'iaswebpage',
   port: process.env.PG_PORT || 5432
 });
 
