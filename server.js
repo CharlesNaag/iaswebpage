@@ -29,7 +29,7 @@ const pool = new Pool({
     user: process.env.PG_USER || 'iaswebpage_user',
     password: process.env.PG_PASSWORD || 'JqaiElt5jmcURnjyNYxm5K6gUUdfj3dA',
     database: process.env.PG_DATABASE || 'iaswebpage',
-    port: process.env.PG_PORT || 5432
+    port: parseInt(process.env.PG_PORT, 10) || 5432
 });
 
 pool.connect((err) => {
